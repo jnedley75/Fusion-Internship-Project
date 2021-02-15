@@ -73,9 +73,10 @@
 
         $('#userTable').on('click', 'a.editor_remove', function () {
             var row =  table.cell($(this).closest('tr').index(),0).data()
+            alert(row);
             $.ajax({
                 type: 'POST',
-                url: 'table/delete',
+                url: 'delete',
                 data: {data:row},
                 success: function(data) {
                     alert("Login ID: " + row);
