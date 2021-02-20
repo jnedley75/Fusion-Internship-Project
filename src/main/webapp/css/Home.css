@@ -1,59 +1,59 @@
-html {
-    background-color: #0092ff;
-    width: 93.45%;
-    height: 78.55%;
-}
-body {
-    padding: 70px 0;
-    text-align: center;
-    height: 106%; /* 93% */
-    width: 106%;
-    background: #212121;
-}
-h1 {
-    width: auto;
-    height: auto;
-    text-align: center;
-    margin: 100px 0 0 -35px;
-    padding: 0;
-    font-family: "Lucida Console";
-    font-style: oblique;
-    color: #ffffff;
-    font-size:50px;
-}
+/*html {*/
+/*    background-color: #0092ff;*/
+/*    width: 93.45%;*/
+/*    height: 78.55%;*/
+/*}*/
+/*body {*/
+/*    padding: 70px 0;*/
+/*    text-align: center;*/
+/*    height: 106%; !* 93% *!*/
+/*    width: 106%;*/
+/*    background: #212121;*/
+/*}*/
+/*h1 {*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    text-align: center;*/
+/*    margin: 100px 0 0 -35px;*/
+/*    padding: 0;*/
+/*    font-family: "Lucida Console";*/
+/*    font-style: oblique;*/
+/*    color: #ffffff;*/
+/*    font-size:50px;*/
+/*}*/
 
-input[class = regLogin]{
-    background-color: #ff0000;
-    position: absolute;
-    color: white;
-    padding: 14px 20px;
-    margin-left: -125px;
-    cursor: pointer;
-    width: 225px;
-    top: 50%;
-    left: 50%;
-    display: inline-block;
-    border-radius: 25px;
-    border: 2px solid #000000;
-}
+/*.regLogin{*/
+/*    background-color: #ff0000;*/
+/*    position: absolute;*/
+/*    color: white;*/
+/*    padding: 14px 20px;*/
+/*    margin-left: -125px;*/
+/*    cursor: pointer;*/
+/*    width: 225px;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    display: inline-block;*/
+/*    border-radius: 25px;*/
+/*    border: 2px solid #000000;*/
+/*}*/
 
-.googlePng{
-    position: absolute;
-    top: 11%;
-}
+/*.googlePng{*/
+/*    position: absolute;*/
+/*    top: 11%;*/
+/*}*/
 
-.googleLogin{
-    background-color: #115afc;
-    position: absolute;
-    color: white;
-    padding: 14px 20px;
-    margin-left: -125px;
-    cursor: pointer;
-    width: 225px;
-    top: 60%;
-    left: 50%;
-    display: inline-block;
-    border-radius: 25px;
-    border: 2px solid #000000;
-}
+/*.googleLogin{*/
+/*    background-color: #115afc;*/
+/*    position: absolute;*/
+/*    color: white;*/
+/*    padding: 14px 20px;*/
+/*    margin-left: -125px;*/
+/*    cursor: pointer;*/
+/*    width: 225px;*/
+/*    top: 60%;*/
+/*    left: 50%;*/
+/*    display: inline-block;*/
+/*    border-radius: 25px;*/
+/*    border: 2px solid #000000;*/
+/*}*/
 
