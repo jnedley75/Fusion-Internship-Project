@@ -14,17 +14,36 @@
     <jsp:include page="navBar.jsp" />
 </head>
 <body>
-<div class ="title">
-    LOGIN
-</div>
-<div class="centerbody">
-    <form action="/login" autocomplete="off" method="post">
-	<pre>
-		<input type="text" id="username" name="username" placeholder="Username"/>
-		<input type="password" id="password" name ="password" placeholder="Password" />
-		<input type="submit" value="Submit" />
-	</pre>
-    </form>
-</div>
+
+    <div class="container-fluid">
+        <div class="row login text-center">
+            <div class="col-12">
+                <h1>Login</h1>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-12">
+                <form action="/login" autocomplete="off" method="post">
+                    	<pre>
+                    		<input type="text" id="username" name="username" placeholder="Username"/>
+                    		<input type="password" id="password" name ="password" placeholder="Password" />
+                    		<input type="submit" value="Submit" />
+                    	</pre>
+                </form>
+            </div>
+        </div>
+    </div>
+<%--<div class ="title">--%>
+<%--    LOGIN--%>
+<%--</div>--%>
+<%--<div class="centerbody">--%>
+<%--    <form action="/login" autocomplete="off" method="post">--%>
+<%--	<pre>--%>
+<%--		<input type="text" id="username" name="username" placeholder="Username"/>--%>
+<%--		<input type="password" id="password" name ="password" placeholder="Password" />--%>
+<%--		<input type="submit" value="Submit" />--%>
+<%--	</pre>--%>
+<%--    </form>--%>
+<%--</div>--%>
 </body>
 </html>

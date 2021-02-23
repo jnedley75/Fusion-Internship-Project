@@ -14,46 +14,118 @@
 			<%@include file="/css/Home.css" %>
 		</style>
 
-		<jsp:include page="navBar.jsp" />
-
 	</head>
 
 	<body>
-		<div class="container">
-			<div class="row justify-content-md-center">
-				<div class="col col-lg-2"></div>
-				<div class="col-md-auto">
-					<h1>Fusion Internship Project</h1>
-				</div>
-				<div class="col col-lg-2"></div>
-			</div>
-			<div class="row">
-				<div class="col"></div>
-				<div class="col-md-auto">
-					<form action="http://example.com:8080/login/database">
-						<button class="regLogin">
-							Login
-						</button>
-					</form>
-				</div>
-				<div class="col"></div>
-			</div>
-			<div class="row">
-				<div class="col"></div>
-				<div class="col-md-auto">
-					<form action="http://example.com:8080/success/google">
-						<button class = "googleLogin">
-							Login with Google
-							<div class="googlePng">
-								<img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in"
-									 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+		<jsp:include page="navBar.jsp" />
+			<div class="container-fluid-slides">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+						<div class="carousel slide" id="carousel-404808">
+							<ol class="carousel-indicators">
+								<li data-slide-to="0" data-target="#carousel-404808" class="active">
+								</li>
+								<li data-slide-to="1" data-target="#carousel-404808">
+								</li>
+								<li data-slide-to="2" data-target="#carousel-404808">
+								</li>
+							</ol>
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" alt="Carousel Bootstrap First" src="https://mrsec.wisc.edu/wp-content/uploads/sites/282/2019/09/iStock-1097058042-1600x500.jpg"/>
+									<div class="carousel-caption">
+										<h1>Fusion Internship Project</h1>
+										<h3>Developed by: Jeff Nedley</h3>
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" alt="Carousel Bootstrap Second" src="https://www.fdtgroup.org/wp-content/uploads/2020/03/banner-9.jpg" />
+									<div class="carousel-caption">
+									</div>
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" alt="Carousel Bootstrap Third" src="http://www.simpleimageresizer.com/_uploads/photos/51781898/cool_1600x500.jpg" />
+									<div class="carousel-caption">
+									</div>
+								</div>
 							</div>
-						</button>
-					</form>
+							<a class="carousel-control-prev" href="#carousel-404808" data-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carousel-404808" data-slide="next">
+							<span class="carousel-control-next-icon"></span>
+							<span class="sr-only">Next</span>
+							</a>
+						</div>
+					</div>
 				</div>
-				<div class="col"></div>
 			</div>
-		</div>
+			<div class="container-fluid padding">
+				<div class="row login text-center">
+					<div class="col-12">
+						<h1 class="display-4">Please login</h1>
+					</div>
+					<hr>
+					<div class="col-12">
+						<div class="row-loginButton">
+							<div class="col-12">
+								<a href="http://example.com:8080/login/database">
+									<button type="button" class="btn btn-primary btn-lg">
+										Login
+									</button>
+								</a>
+							</div>
+						</div>
+						<div class="row-googleButton">
+							<div class="col-12">
+								<a href="http://example.com:8080/success/google">
+									<button type=button class="btn btn-primary btn-lg">
+										Google
+<%--										<div class="googlePng">--%>
+<%--											<img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in"--%>
+<%--												 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />--%>
+<%--										</div>--%>
+									</button>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+<%--		<div class="container">--%>
+<%--			<div class="row">--%>
+<%--				<div class="col-xl-10">--%>
+<%--					<h1 class="align-center">Fusion Internship Project</h1>--%>
+<%--				</div>--%>
+<%--			</div>--%>
+<%--			<div class="row">--%>
+<%--				<div class="col"></div>--%>
+<%--				<div class="col-md-auto">--%>
+<%--					<form action="http://example.com:8080/login/database">--%>
+<%--						<button class="regLogin">--%>
+<%--							Login--%>
+<%--						</button>--%>
+<%--					</form>--%>
+<%--				</div>--%>
+<%--				<div class="col"></div>--%>
+<%--			</div>--%>
+<%--			<div class="row">--%>
+<%--				<div class="col"></div>--%>
+<%--				<div class="col-md-auto">--%>
+<%--					<form action="http://example.com:8080/success/google">--%>
+<%--						<button class = "googleLogin">--%>
+<%--							Login with Google--%>
+<%--							<div class="googlePng">--%>
+<%--								<img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in"--%>
+<%--									 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />--%>
+<%--							</div>--%>
+<%--						</button>--%>
+<%--					</form>--%>
+<%--				</div>--%>
+<%--				<div class="col"></div>--%>
+<%--			</div>--%>
+<%--		</div>--%>
 	</body>
 
 </html>

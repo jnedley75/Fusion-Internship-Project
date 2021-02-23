@@ -1,3 +1,16 @@
+
+html, body{
+    background: #262329;
+}
+h2{
+    color: white;
+}
+/*.btn-viewUser{*/
+/*    background: #124a91;*/
+/*}*/
+/*.btn-viewUser:hover{*/
+/*    background: #124a91;*/
+/*}*/
 /*html {*/
 /*    background-color: #0092ff;*/
 /*    width: inherit;*/
