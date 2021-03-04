@@ -161,6 +161,8 @@ public class UserDAOImpl implements UserDAO{
                 temp.setLoginID(rs.getInt("LoginID"));
                 temp.setEmail(rs.getString("Email"));
                 temp.setUsername(rs.getString("Username"));
+                temp.setAge(rs.getInt("Age"));
+                temp.setGender(rs.getString("Gender"));
                 temp.setLastLogin(rs.getTimestamp("lastLogin"));
                 users.add(temp);
 

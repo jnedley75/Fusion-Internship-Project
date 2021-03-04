@@ -26,6 +26,8 @@
         <th>Login ID</th>
         <th>Email</th>
         <th>Username</th>
+        <th>Age</th>
+        <th>Gender</th>
         <th>Last Login</th>
         <th>Delete</th>
     </tr>
@@ -36,6 +38,8 @@
         <th>Login ID</th>
         <th>Email</th>
         <th>Username</th>
+        <th>Age</th>
+        <th>Gender</th>
         <th>Last Login</th>
         <th>Delete</th>
     </tr>
@@ -63,6 +67,8 @@
                 {data : "loginID"},
                 {data : "email" },
                 {data : "username"},
+                {data : "age" },
+                {data : "gender"},
                 {data : "lastLogin",
                     render: function(data, type, row) {
                         if (type === "sort" || type === "type") {

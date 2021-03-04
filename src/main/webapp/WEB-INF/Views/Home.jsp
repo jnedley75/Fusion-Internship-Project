@@ -32,19 +32,21 @@
 							</ol>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<img class="d-block w-100" alt="Carousel Bootstrap First" src="https://mrsec.wisc.edu/wp-content/uploads/sites/282/2019/09/iStock-1097058042-1600x500.jpg"/>
+									<img class="d-block w-100" style="filter: brightness(50%)" alt="Carousel Bootstrap First" src="/resources/images/1st.jpg"/>
 									<div class="carousel-caption">
 										<h1>Fusion Internship Project</h1>
 										<h3>Developed by: Jeff Nedley</h3>
+										<button type="button" class="btn btn-outline-light btn-lg">LOGIN</button>
+										<button type="button" class="btn btn-primary btn-lg"><img class="logo" src="/resources/images/googleLogo.png">LOGIN WITH GOOGLE</button>
 									</div>
 								</div>
 								<div class="carousel-item">
-									<img class="d-block w-100" alt="Carousel Bootstrap Second" src="https://www.fdtgroup.org/wp-content/uploads/2020/03/banner-9.jpg" />
+									<img class="d-block w-100" style="filter: brightness(50%)" alt="Carousel Bootstrap Second" src="/resources/images/2nd.jpg" />
 									<div class="carousel-caption">
 									</div>
 								</div>
 								<div class="carousel-item">
-									<img class="d-block w-100" alt="Carousel Bootstrap Third" src="http://www.simpleimageresizer.com/_uploads/photos/51781898/cool_1600x500.jpg" />
+									<img class="d-block w-100" style="filter: brightness(50%)" alt="Carousel Bootstrap Third" src="/resources/images/3rd.jpg" />
 									<div class="carousel-caption">
 									</div>
 								</div>
@@ -64,35 +66,25 @@
 			<div class="container-fluid padding">
 				<div class="row login text-center">
 					<div class="col-12">
-						<h1 class="display-4">Please login</h1>
+						<h1 class="display-4">Login using the buttons above!</h1>
 					</div>
-					<hr>
+				</div>
+			</div>
+		<footer>
+			<div class="container-fluid footer padding">
+				<div class="row text-center">
 					<div class="col-12">
-						<div class="row-loginButton">
-							<div class="col-12">
-								<a href="http://example.com:8080/login/database">
-									<button type="button" class="btn btn-primary btn-lg">
-										Login
-									</button>
-								</a>
-							</div>
+						<img class="foot-img" src="/resources/images/FusionLogo.png">
+						<div class="row hr text-center">
+							<hr class="light">
 						</div>
-						<div class="row-googleButton">
-							<div class="col-12">
-								<a href="http://example.com:8080/success/google">
-									<button type=button class="btn btn-primary btn-lg">
-										Google
-<%--										<div class="googlePng">--%>
-<%--											<img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in"--%>
-<%--												 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />--%>
-<%--										</div>--%>
-									</button>
-								</a>
-							</div>
+						<div class="row foot text-center">
+							<p>Internship Project by Jeffrey Nedley</p>
 						</div>
 					</div>
 				</div>
 			</div>
+		</footer>
 <%--		<div class="container">--%>
 <%--			<div class="row">--%>
 <%--				<div class="col-xl-10">--%>

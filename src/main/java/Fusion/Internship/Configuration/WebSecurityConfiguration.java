@@ -12,7 +12,7 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
         http
                 .csrf().disable()
                 .antMatcher("/**").authorizeRequests()
-                .antMatchers("/", "/Home", "/login", "/login/database", "/table").permitAll()
+                .antMatchers("/", "/Home", "/login", "/login/database", "/table", "/resources/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .oauth2Login();

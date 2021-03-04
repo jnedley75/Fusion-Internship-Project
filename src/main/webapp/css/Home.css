@@ -2,6 +2,7 @@
 
 html, body{
     background: #262329;
+    overflow-x: hidden;
 }
 .container-fluid-slides{
     padding-left: 0px;
@@ -21,10 +22,45 @@ html, body{
 .login h1{
     color: white;
 }
-.login hr{
-    border-top: -moz-mac-accentdarkestshadow;
-    width: 50%;
-    padding-bottom: 1rem;
+.login h3{
+    color: white;
+}
+.btn-primary{
+    background-color: #0339fc;
+    border: 1px solid #0339fc;
+}
+.logo{
+    height: auto;
+    width: auto;
+    max-height: 90px;
+    max-width: 25px;
+    margin-bottom: 2px;
+    margin-right: 3px;
+    padding: 0;
+}
+
+.foot{
+    display: block;
+}
+.foot p{
+    color: white;
+}
+
+hr.light{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 25%;
+    background-color:white;
+    height: 1px;
+}
+
+
+.foot-img{
+    height: auto;
+    width: auto;
+    max-height: 350px;
+    max-width: 200px;
 }
 
 /*html {*/

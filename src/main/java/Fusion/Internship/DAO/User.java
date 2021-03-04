@@ -11,6 +11,8 @@ public class User {
     private String password;
     private int loginID;
     private String email;
+    private int age;
+    private String gender;
     private Timestamp lastLogin = new Timestamp(time);
     private boolean admin;
 
@@ -68,6 +70,22 @@ public class User {
 
     public String getPassword() {
         return password;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getGender() {
+        return gender;
     }
 
     public void setAdmin(boolean admin){ this.admin = admin; }
