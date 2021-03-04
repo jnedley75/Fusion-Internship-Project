@@ -7,6 +7,9 @@ import org.springframework.ui.Model;
 import java.util.ArrayList;
 
 public interface UserService {
+
+    static String registerUser(User user){ return null; }
+
     static String databaseLogin(User user){
         return null;
     }

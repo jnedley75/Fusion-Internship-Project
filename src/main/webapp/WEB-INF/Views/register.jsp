@@ -14,5 +14,33 @@
 <body>
     <jsp:include page="navBar.jsp" />
 
+<div class="container-fluid">
+    <div class="row text-center">
+        <div class="col-12">
+            <h1>REGISTRATION</h1>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-12">
+            <form action="/register" class="text-center" autocomplete="off" method="post">
+                <input type="text" id="email" name="email" placeholder="Email"/>
+                <div class="row text-center justify-content-center">
+                    <input type="text" id="username" name="username" placeholder="Username"/>
+                </div>
+                <div class="row text-center justify-content-center">
+                    <input type="text" id="password" name="password" placeholder="Password"/>
+                </div>
+                <div class="row text-center justify-content-center">
+                    <input type="number" id="age" name="age" placeholder="Age"/>
+                </div>
+                <div class="row text-center justify-content-center">
+                    <input type="text" id="gender" name="gender" placeholder="Gender"/>
+                </div>
+                <input class="register btn btn-primary btn-lg" type="submit" value="Register" />
+            </form>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>

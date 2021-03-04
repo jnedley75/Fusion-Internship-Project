@@ -2,3 +2,48 @@ html, body{
     background: #262329;
     overflow-x: hidden;
 }
+
+h1{
+    color: white;
+}
+
+input[type=text]{
+    width: 225px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+input[type=number]{
+    width: 225px;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+input[type=text]:focus{
+    border-color:dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+input[type=number]:focus{
+    border-color:dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+.register{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    background-color: #124a91;
+    border: 1px solid #124a91;
+    color: white;
+    margin-top: 20px;
+}

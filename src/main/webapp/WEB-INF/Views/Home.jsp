@@ -39,7 +39,7 @@
 										<a href="http://example.com:8080/login/database" class="database btn btn-primary btn-lg">LOGIN</a>
 										<a href="http://example.com:8080/success/google" class="btn btn-primary btn-lg"><img class="logo" src="/resources/images/googleLogo.png">LOGIN WITH GOOGLE</a>
 										<br>
-										<a href="http://example.com:8080/register" style="margin-top: 10px" class=" register btn btn-primary btn-lg">REGISTER</a>
+										<a href="http://example.com:8080/register/database" style="margin-top: 10px" class=" register btn btn-primary btn-lg">REGISTER</a>
 									</div>
 								</div>
 								<div class="carousel-item">

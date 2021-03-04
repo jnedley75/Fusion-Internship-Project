@@ -38,8 +38,10 @@ public class UserDAOImpl implements UserDAO{
         Timestamp lastLogin = user.getLastLogin();
         String username = user.getUsername();
         String password = user.getPassword();
+        int age = user.getAge();
+        String gender = user.getGender();
 
-        String sql = "INSERT INTO login (Email,Username,LastLogin,Pass,AdminStatus) VALUES (?,?,?,?,?)";
+        String sql = "INSERT INTO login (Email,Username,LastLogin,Pass,AdminStatus, Age, Gender) VALUES (?,?,?,?,?,?,?)";
         PreparedStatement ps = conn.prepareStatement(sql);
 
         ps.setString(1, email);
@@ -47,6 +49,8 @@ public class UserDAOImpl implements UserDAO{
         ps.setTimestamp(3, lastLogin);
         ps.setString(4, password);
         ps.setBoolean(5, false);
+        ps.setInt(6,age);
+        ps.setString(7, gender);
 
         ps.executeUpdate();
 

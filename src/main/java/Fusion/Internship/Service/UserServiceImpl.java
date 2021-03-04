@@ -17,6 +17,16 @@ public class UserServiceImpl implements UserService{
     static long time = date.getTime();
     static private Timestamp lastLogin = new Timestamp(time);
 
+    public static String registerUser(User register) throws SQLException {
+        try {
+            UserDAOImpl.insertUser(register);
+            return "Home";
+        }
+        catch(SQLException e){
+            return "register";
+        }
+    }
+
     public static String databaseLogin(User verifiedUser) throws SQLException {
 
         User temp = new User();
