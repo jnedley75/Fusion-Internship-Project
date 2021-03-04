@@ -2,6 +2,15 @@
 html, body{
     background: #262329;
 }
+
+h1{
+    color: white;
+}
+
+.invalid{
+    background-color: #124a91;
+    border: 1px solid #124a91;
+}
 /*html {*/
 /*    background-color: #0092ff;*/
 /*    width: inherit;*/

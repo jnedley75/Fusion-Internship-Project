@@ -2,8 +2,12 @@
 html, body{
     background: #262329;
 }
-h2{
+h1{
     color: white;
+}
+.showTable{
+    background-color: #124a91;
+    border: 1px solid #124a91;
 }
 /*.btn-viewUser{*/
 /*    background: #124a91;*/

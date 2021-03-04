@@ -36,8 +36,10 @@
 									<div class="carousel-caption">
 										<h1>Fusion Internship Project</h1>
 										<h3>Developed by: Jeff Nedley</h3>
-										<button type="button" class="btn btn-outline-light btn-lg">LOGIN</button>
-										<button type="button" class="btn btn-primary btn-lg"><img class="logo" src="/resources/images/googleLogo.png">LOGIN WITH GOOGLE</button>
+										<a href="http://example.com:8080/login/database" class="database btn btn-primary btn-lg">LOGIN</a>
+										<a href="http://example.com:8080/success/google" class="btn btn-primary btn-lg"><img class="logo" src="/resources/images/googleLogo.png">LOGIN WITH GOOGLE</a>
+										<br>
+										<a href="http://example.com:8080/register" style="margin-top: 10px" class=" register btn btn-primary btn-lg">REGISTER</a>
 									</div>
 								</div>
 								<div class="carousel-item">

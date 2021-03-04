@@ -23,12 +23,12 @@
         </div>
         <div class="row text-center">
             <div class="col-12">
-                <form action="/login" autocomplete="off" method="post">
-                    	<pre>
-                    		<input type="text" id="username" name="username" placeholder="Username"/>
-                    		<input type="password" id="password" name ="password" placeholder="Password" />
-                    		<input type="submit" value="Submit" />
-                    	</pre>
+                <form action="/login" class="text-center" autocomplete="off" method="post">
+                    <input type="text" id="username" name="username" placeholder="Username"/>
+                    <div class="row text-center justify-content-center">
+                        <input type="password" id="password" name ="password" placeholder="Password" />
+                    </div>
+                    <input class="submit btn btn-primary btn-lg" type="submit" value="Submit" />
                 </form>
             </div>
         </div>

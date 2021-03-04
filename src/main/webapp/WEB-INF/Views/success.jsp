@@ -19,14 +19,14 @@
     <div class="container-fluid">
         <div class="row text-center">
             <div class="col-12">
-                <h2>${login.message}</h2>
+                <h1>${login.message}</h1>
             </div>
         </div>
         <div class="row viewUser text-center">
             <div class="col-12">
                 <c:if test = "${AdminCheck.adminCheck == true}">
                     <form action="http://example.com:8080/table\">
-                        <input class="showTable" type="submit" value="View Users"/>
+                        <input class="showTable btn btn-primary btn-lg" type="submit" value="View Users"/>
                     </form>
                 </c:if>
             </div>

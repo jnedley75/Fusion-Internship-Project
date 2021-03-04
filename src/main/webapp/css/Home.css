@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
 
 html, body{
     background: #262329;
@@ -26,8 +26,16 @@ html, body{
     color: white;
 }
 .btn-primary{
-    background-color: #0339fc;
-    border: 1px solid #0339fc;
+    background-color: #124a91;
+    border: 1px solid #124a91;
+}
+.database{
+    background-color: #7ac142;
+    border: 1px solid #7ac142;
+}
+.register{
+    background-color: #7ac142;
+    border: 1px solid #7ac142;
 }
 .logo{
     height: auto;
