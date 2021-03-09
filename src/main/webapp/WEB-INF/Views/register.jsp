@@ -31,7 +31,7 @@
                     <input type="text" id="password" name="password" placeholder="Password"/>
                 </div>
                 <div class="row text-center justify-content-center">
-                    <input type="number" id="age" name="age" placeholder="Age"/>
+                    <input type="text" id="age" name="age" placeholder="Age"/>
                 </div>
                 <div class="row text-center justify-content-center">
                     <input type="text" id="gender" name="gender" placeholder="Gender"/>

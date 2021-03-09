@@ -28,7 +28,7 @@ public class RegisterController {
 
     @PostMapping
     public ModelAndView register(@RequestParam(name="email") String email, @RequestParam(name="username") String username,
-                                 @RequestParam(name="password") String password, @RequestParam(name="age") int age,
+                                 @RequestParam(name="password") String password, @RequestParam(name="age") String age,
                                  @RequestParam(name="gender") String gender, Model model) throws SQLException {
 
 
@@ -37,8 +37,17 @@ public class RegisterController {
         user.setEmail(email);
         user.setUsername(username);
         user.setPassword(password);
-        user.setAge(age);
-        user.setGender(gender);
+
+        try{
+            int actualAge = Integer.parseInt(age);
+            user.setAge(actualAge);
+        }
+        catch(NumberFormatException e){
+
+        }
+        if(gender.length() >= 1){
+            user.setGender(gender);
+        }
 
         String result = UserServiceImpl.registerUser(user);
 
