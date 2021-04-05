@@ -60,15 +60,18 @@ public class SuccessController {
 
         if(UserServiceImpl.googleLogin(newGoogleUser).equals("successNew")){
             login login = new login();
+            newGoogleUser.setLoggedIn(true);
             String name = (String)token.getPrincipal().getAttributes().get("given_name");
             login.setMessage("Welcome "+name+", you have successfully logged in with Google!");
             model.addAttribute("login", login);
             session.setAttribute("adminStatus", newGoogleUser.getAdmin());
             session.setAttribute("loginMessage",login.getMessage());
+            session.setAttribute("loggedStatus", newGoogleUser.getLoggedIn());
             return "success";
         } else{
             String name = (String)token.getPrincipal().getAttributes().get("given_name");
             login login = new login();
+            newGoogleUser.setLoggedIn(true);
             login.setMessage("Welcome back "+name+", you have successfully logged in with Google!");
             model.addAttribute("login", login);
             User temp = UserDAOImpl.getUser(newGoogleUser);
@@ -79,6 +82,7 @@ public class SuccessController {
             model.addAttribute("AdminCheck", AdminCheck);
             session.setAttribute("adminStatus", adminCheckUser);
             session.setAttribute("loginMessage",login.getMessage());
+            session.setAttribute("loggedStatus", newGoogleUser.getLoggedIn());
 //            if((boolean)session.getAttribute("adminStatus")){
 //                String viewUser = "<form action=\"http://example.com:8080/table\">" +
 //                        "<input class=\"showTable\" type=\"submit\" value=\"View Users\"/>" +

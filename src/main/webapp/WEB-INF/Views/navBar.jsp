@@ -1,3 +1,6 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="a" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page session="true"%>
 <head>
     <style>
         .nav{
@@ -23,7 +26,16 @@
             </button>
             <div class="collapse navbar-collapse" id="#navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                <%--Put navbar items--%>
+                    <c:if test = "${sessionScope.loggedStatus == true}">
+                        <a:if test="${sessionScope.adminStatus == true}">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="http://example.com:8080/table\">View Users</a>
+                            </li>
+                        </a:if>
+                        <li class="nav-item">
+                            <a class="nav-link" href="http://example.com:8080/logout">Logout</a>
+                        </li>
+                    </c:if>
                 </ul>
             </div>
         </div>

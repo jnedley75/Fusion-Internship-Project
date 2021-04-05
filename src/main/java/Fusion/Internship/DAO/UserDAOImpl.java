@@ -73,6 +73,7 @@ public class UserDAOImpl implements UserDAO{
                 user.setLoginID(rs.getInt("LoginID"));
                 user.setEmail(rs.getString("Email"));
                 user.setLastLogin(rs.getTimestamp("LastLogin"));
+                user.setLoggedIn(true);
                 return user;
             }
             else {
@@ -107,11 +108,13 @@ public class UserDAOImpl implements UserDAO{
             String username = rs.getString("Username");
             boolean admin = rs.getBoolean("AdminStatus");
             String password = rs.getString("Pass");
+            boolean loggedStatus = rs.getBoolean("loggedStatus");
             rs.close();
 
             User returnedUser = new User(loginID, email, username);
             returnedUser.setAdmin(admin);
             returnedUser.setPassword(password);
+            returnedUser.setLoggedIn(loggedStatus);
 
             return returnedUser;
         } catch (SQLException e) {
