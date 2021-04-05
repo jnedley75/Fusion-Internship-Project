@@ -33,17 +33,6 @@
             </div>
         </div>
     </div>
-<%--<div class ="title">--%>
-<%--    LOGIN--%>
-<%--</div>--%>
-<%--<div class="centerbody">--%>
-<%--    <form action="/login" autocomplete="off" method="post">--%>
-<%--	<pre>--%>
-<%--		<input type="text" id="username" name="username" placeholder="Username"/>--%>
-<%--		<input type="password" id="password" name ="password" placeholder="Password" />--%>
-<%--		<input type="submit" value="Submit" />--%>
-<%--	</pre>--%>
-<%--    </form>--%>
-<%--</div>--%>
+    <jsp:include page="footer.jsp" />
 </body>
 </html>

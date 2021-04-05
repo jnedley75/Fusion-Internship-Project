@@ -11,12 +11,11 @@ import javax.servlet.http.HttpSession;
 @Controller
 @RequestMapping(value = {"/logout"})
 public class LogoutController {
-    @PostMapping
+    @GetMapping
     public ModelAndView logout(HttpServletRequest request){
         System.out.println("we in this bitch");
         HttpSession session = request.getSession(false);
         ModelAndView mv = new ModelAndView();
-//        session.setAttribute("loggedStatus", false);
         session.invalidate();
         mv.setViewName("Home");
         return mv;

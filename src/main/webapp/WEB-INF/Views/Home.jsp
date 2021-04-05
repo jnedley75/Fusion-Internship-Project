@@ -72,54 +72,7 @@
 					</div>
 				</div>
 			</div>
-		<footer>
-			<div class="container-fluid footer padding">
-				<div class="row text-center">
-					<div class="col-12">
-						<img class="foot-img" src="/resources/images/FusionLogo.png">
-						<div class="row hr text-center">
-							<hr class="light">
-						</div>
-						<div class="row foot text-center">
-							<p>Internship Project by Jeffrey Nedley</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-<%--		<div class="container">--%>
-<%--			<div class="row">--%>
-<%--				<div class="col-xl-10">--%>
-<%--					<h1 class="align-center">Fusion Internship Project</h1>--%>
-<%--				</div>--%>
-<%--			</div>--%>
-<%--			<div class="row">--%>
-<%--				<div class="col"></div>--%>
-<%--				<div class="col-md-auto">--%>
-<%--					<form action="http://example.com:8080/login/database">--%>
-<%--						<button class="regLogin">--%>
-<%--							Login--%>
-<%--						</button>--%>
-<%--					</form>--%>
-<%--				</div>--%>
-<%--				<div class="col"></div>--%>
-<%--			</div>--%>
-<%--			<div class="row">--%>
-<%--				<div class="col"></div>--%>
-<%--				<div class="col-md-auto">--%>
-<%--					<form action="http://example.com:8080/success/google">--%>
-<%--						<button class = "googleLogin">--%>
-<%--							Login with Google--%>
-<%--							<div class="googlePng">--%>
-<%--								<img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in"--%>
-<%--									 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />--%>
-<%--							</div>--%>
-<%--						</button>--%>
-<%--					</form>--%>
-<%--				</div>--%>
-<%--				<div class="col"></div>--%>
-<%--			</div>--%>
-<%--		</div>--%>
+		<jsp:include page="footer.jsp" />
 	</body>
 
 </html>

@@ -20,31 +20,32 @@
 </head>
 <Title>User Table</Title>
 <body>
-<table id="userTable" class="display" style="width:100%">
-    <thead>
-    <tr>
-        <th>Login ID</th>
-        <th>Email</th>
-        <th>Username</th>
-        <th>Age</th>
-        <th>Gender</th>
-        <th>Last Login</th>
-        <th>Delete</th>
-    </tr>
-    </thead>
+    <table id="userTable" class="display" style="width:100%">
+        <thead>
+        <tr>
+            <th>Login ID</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Last Login</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
 
-    <tfoot>
-    <tr>
-        <th>Login ID</th>
-        <th>Email</th>
-        <th>Username</th>
-        <th>Age</th>
-        <th>Gender</th>
-        <th>Last Login</th>
-        <th>Delete</th>
-    </tr>
-    </tfoot>
-</table>
+        <tfoot>
+        <tr>
+            <th>Login ID</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Last Login</th>
+            <th>Delete</th>
+        </tr>
+        </tfoot>
+    </table>
+    <jsp:include page="footer.jsp" />
 </body>
 
 <script type="text/javascript">

@@ -1,9 +1,12 @@
 
 html, body{
-    background: #262329;
+    background: #2f3136;//#262329;
 }
 h1{
     color: white;
+}
+.text{
+    padding-top: 8%;
 }
 .showTable{
     background-color: #124a91;

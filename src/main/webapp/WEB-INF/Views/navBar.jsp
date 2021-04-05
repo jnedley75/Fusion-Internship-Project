@@ -11,7 +11,12 @@
         }
 
         .navbar{
-            background-color: #262329;
+            background-color: #202225;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
+            /*box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);*/
         }
     </style>
 </head>
@@ -33,7 +38,7 @@
                             </li>
                         </a:if>
                         <li class="nav-item">
-                            <a class="nav-link" href="http://example.com:8080/logout">Logout</a>
+                            <a class="nav-link" href="http://example.com:8080/logout\">Logout</a>
                         </li>
                     </c:if>
                 </ul>

@@ -1,0 +1,29 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+}
+.foot{
+    display: block;
+}
+.foot p{
+    color: white;
+}
+
+hr.light{
+    border: 0;
+    clear:both;
+    display:block;
+    width: 25%;
+    background-color:white;
+    height: 1px;
+}
+
+
+.foot-img{
+    height: auto;
+    width: auto;
+    max-height: 350px;
+    max-width: 200px;
+}

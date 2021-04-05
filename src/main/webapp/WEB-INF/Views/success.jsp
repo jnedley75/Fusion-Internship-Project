@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="row text-center">
+        <div class="row text text-center">
             <div class="col-12">
                 <h1>${login.message}</h1>
             </div>
@@ -32,5 +32,6 @@
             </div>
          </div>
     </div>
+    <jsp:include page="footer.jsp" />
 </body>
 </html>
