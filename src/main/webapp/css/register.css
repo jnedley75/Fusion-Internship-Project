@@ -1,14 +1,15 @@
 html, body{
     background: #2f3136;
+}
+body{
     overflow-x: hidden;
 }
-
 h1{
     color: white;
 }
 
 .register-text{
-    padding-top: 8%;
+    padding-top: 5%;
 }
 
 input[type=text]{

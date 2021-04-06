@@ -18,6 +18,21 @@
             box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25);
             /*box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);*/
         }
+
+        .dropdown-menu{
+            background-color: #2b2b2b;
+        }
+
+        .googleLogo{
+            height: auto;
+            width: auto;
+            max-height: 90px;
+            max-width: 25px;
+            margin-bottom: 2px;
+            margin-right: 3px;
+            margin-left: 3px;
+            padding: 0;
+        }
     </style>
 </head>
 <html>
@@ -31,16 +46,35 @@
             </button>
             <div class="collapse navbar-collapse" id="#navbarResponsive">
                 <ul class="navbar-nav ml-auto">
-                    <c:if test = "${sessionScope.loggedStatus == true}">
-                        <a:if test="${sessionScope.adminStatus == true}">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="http://example.com:8080/table\">View Users</a>
-                            </li>
-                        </a:if>
-                        <li class="nav-item">
-                            <a class="nav-link" href="http://example.com:8080/logout\">Logout</a>
-                        </li>
-                    </c:if>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <c:choose>
+                                <c:when test="${sessionScope.loggedStatus == true}">
+                                    ${sessionScope.username}
+                                </c:when>
+                                <c:otherwise>
+                                    Profile
+                                </c:otherwise>
+                            </c:choose>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <c:if test = "${sessionScope.loggedStatus == true}">
+                                <a:if test="${sessionScope.adminStatus == true}">
+                                    <a class="dropdown-item" href="http://example.com:8080/table\">View Users</a>
+                                </a:if>
+                                <div class="dropdown-divider"></div>
+                            </c:if>
+                            <c:choose>
+                                <c:when test = "${sessionScope.loggedStatus == true}">
+                                    <a class="dropdown-item" href="http://example.com:8080/logout\">Sign Out</a>
+                                </c:when>
+                                <c:otherwise>
+                                    <a class="dropdown-item" href="http://example.com:8080/login/database">Login</a>
+                                    <a class="dropdown-item" href="http://example.com:8080/success/google">Login with Google<img class="googleLogo" src="/resources/images/googleLogo.png"></a>
+                                </c:otherwise>
+                            </c:choose>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

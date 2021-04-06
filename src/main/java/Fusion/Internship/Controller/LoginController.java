@@ -56,6 +56,7 @@ public class LoginController {
             session.setAttribute("adminStatus", adminCheckUser);
             session.setAttribute("loginMessage",login.getMessage());
             session.setAttribute("loggedStatus", user.getLoggedIn());
+            session.setAttribute("username", user.getUsername());
             mv.setViewName("success");
 //            if((boolean)session.getAttribute("adminStatus")) {
 //                String viewUser = "<form action=\"http://example.com:8080/table\">" +
@@ -73,6 +74,7 @@ public class LoginController {
             model.addAttribute("AdminCheck", AdminCheck);
             session.setAttribute("adminStatus", adminCheckUser);
             session.setAttribute("loggedStatus", user.getLoggedIn());
+            session.setAttribute("username", user.getUsername());
             mv.setViewName("success");
 //            if((boolean)session.getAttribute("adminStatus")) {
 //                String viewUser = "<form action=\"http://example.com:8080/table\">" +

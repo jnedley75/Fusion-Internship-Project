@@ -67,6 +67,7 @@ public class SuccessController {
             session.setAttribute("adminStatus", newGoogleUser.getAdmin());
             session.setAttribute("loginMessage",login.getMessage());
             session.setAttribute("loggedStatus", newGoogleUser.getLoggedIn());
+            session.setAttribute("username", newGoogleUser.getUsername());
             return "success";
         } else{
             String name = (String)token.getPrincipal().getAttributes().get("given_name");
@@ -83,6 +84,7 @@ public class SuccessController {
             session.setAttribute("adminStatus", adminCheckUser);
             session.setAttribute("loginMessage",login.getMessage());
             session.setAttribute("loggedStatus", newGoogleUser.getLoggedIn());
+            session.setAttribute("username", newGoogleUser.getUsername());
 //            if((boolean)session.getAttribute("adminStatus")){
 //                String viewUser = "<form action=\"http://example.com:8080/table\">" +
 //                        "<input class=\"showTable\" type=\"submit\" value=\"View Users\"/>" +

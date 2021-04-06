@@ -44,12 +44,21 @@
 								</div>
 								<div class="carousel-item">
 									<img class="d-block w-100" style="filter: brightness(50%)" alt="Carousel Bootstrap Second" src="/resources/images/2nd.jpg" />
-									<div class="carousel-caption">
+									<div class="carousel-caption secondCaption">
+										<h1>Languages Used</h1>
+										<h3>Java</h3>
+										<h3>HTML</h3>
+										<h3>CSS</h3>
+										<h3>Javascript</h3>
 									</div>
 								</div>
 								<div class="carousel-item">
 									<img class="d-block w-100" style="filter: brightness(50%)" alt="Carousel Bootstrap Third" src="/resources/images/3rd.jpg" />
-									<div class="carousel-caption">
+									<div class="carousel-caption thirdCaption">
+										<h1>Frameworks Used</h1>
+										<h3>Spring Boot</h3>
+										<h3>Ajax</h3>
+										<h3>JQuery</h3>
 									</div>
 								</div>
 							</div>

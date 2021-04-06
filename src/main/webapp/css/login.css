@@ -1,6 +1,8 @@
 
 html, body{
     background: #2f3136;
+}
+body{
     overflow-x: hidden;
 }
 .title{
