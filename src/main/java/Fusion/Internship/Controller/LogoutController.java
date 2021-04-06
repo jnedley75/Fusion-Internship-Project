@@ -13,7 +13,6 @@ import javax.servlet.http.HttpSession;
 public class LogoutController {
     @GetMapping
     public ModelAndView logout(HttpServletRequest request){
-        System.out.println("we in this bitch");
         HttpSession session = request.getSession(false);
         ModelAndView mv = new ModelAndView();
         session.invalidate();

@@ -19,10 +19,6 @@ public class HomeController {
 	public ModelAndView homeView(HttpServletRequest request)
 	{
 		ModelAndView model = new ModelAndView();
-		HttpSession session = request.getSession(false);
-		if(session != null){
-			System.out.println("not null");
-		}
 
 		model.setViewName("Home");
 
