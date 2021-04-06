@@ -53,7 +53,7 @@
                                     ${sessionScope.username}
                                 </c:when>
                                 <c:otherwise>
-                                    Profile
+                                    Account
                                 </c:otherwise>
                             </c:choose>
                         </a>
