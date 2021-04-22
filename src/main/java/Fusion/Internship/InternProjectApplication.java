@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import java.util.Arrays;
 
 @SpringBootApplication
+//@ImportResource("org.springframework")
 public class InternProjectApplication {
 
 	public static void main(String[] args) {
